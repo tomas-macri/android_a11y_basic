@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@id/btnAddCoin"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/ivCheckName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/ivCheckName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:contentDescription="@null"
+                android:src="@drawable/baseline_check_circle_24"
+                app:layout_constraintBottom_toBottomOf="@id/inputLayoutName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/inputLayoutName"
+                app:layout_constraintTop_toTopOf="@id/inputLayoutName" />
+
+            <TextView
+                android:id="@+id/textCoinCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="48dp"
+                android:layout_marginBottom="8dp"
+                android:labelFor="@+id/editTextCoinCode"
+                android:text="@string/coin_code_label"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/inputLayoutName" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutCoinCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/ivCheckEmail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textCoinCode">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextCoinCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/ivCheckEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:contentDescription="@null"
+                android:src="@drawable/baseline_check_circle_24"
+                app:layout_constraintBottom_toBottomOf="@id/inputLayoutCoinCode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/inputLayoutCoinCode"
+                app:layout_constraintTop_toTopOf="@id/inputLayoutCoinCode" />
+
+            <TextView
+                android:id="@+id/textValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="48dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/value_title"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/inputLayoutCoinCode" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/ivCheckValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textValue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/ivCheckValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:contentDescription="@null"
+                android:src="@drawable/baseline_gpp_bad_24"
+                app:layout_constraintBottom_toBottomOf="@id/inputLayoutValue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/inputLayoutValue"
+                app:layout_constraintTop_toTopOf="@id/inputLayoutValue" />
+
+
+            <TextView
+                android:id="@+id/textImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="48dp"
+                android:layout_marginBottom="8dp"
+                android:text=""
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/inputLayoutValue" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutImage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/ivCheckImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textImage">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/ivCheckImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:contentDescription="@null"
+                android:src="@drawable/baseline_gpp_bad_24"
+                app:layout_constraintBottom_toBottomOf="@id/inputLayoutImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/inputLayoutImage"
+                app:layout_constraintTop_toTopOf="@id/inputLayoutImage" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAddCoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">AccessibilityBasicViews</string>
+    <string name="main_activity_title">Detalle de la moneda</string>
+    <string name="big_change">Cambiar valor de la moneda</string>
+    <string name="small_change">Cambiar la descripción</string>
+    <string name="small_change_content_description">Cambiar la descripción</string>
+    <string name="android_logo">Logo de Bitcoin</string>
+    <string name="hola_mundo">Hola Mundo!</string>
+    <string name="create_coin">Crear moneda</string>
+    <string name="tab_coin_title">Monedas</string>
+    <string name="tab_add_title">Añadir</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="password_hint">Introduce tu contraseña</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget vulputate sem, et auctor ante. Pellentesque sit amet hendrerit risus. Duis vel gravida est. Cras in ante eget nunc gravida dignissim. Donec in suscipit nisl. Nulla eu sapien ac nisl convallis cursus. Nam eget porttitor mi. Vestibulum eu placerat quam. Quisque posuere dignissim nunc vel gravida. Nulla eu sapien ac nisl convallis cursus. Nam eget porttitor mi. Vestibulum eu placerat quam. Quisque posuere dignissim nunc vel gravida</string>
+    <string name="introduce_tu_email">Introduce tu email</string>
+    <string name="name_label">Nombre</string>
+    <string name="name_hint">Nombre de la moneda</string>
+    <string name="coin_code_label">Código de la moneda</string>
+    <string name="submit">Añadir</string>
+    <string name="coin_logo">Logo de la moneda</string>
+    <string name="remove_coin_label">Eliminar moneda</string>
+    <string name="favorito">Favorito</string>
+    <string name="value_title">Valor</string>
+    <string name="add_coin_title">Añadir una moneda</string>
+    <string name="coin_details_title">Detalles de la moneda</string>
+    <string name="coins_title">Todas las monedas</string>
+    <string name="delete_coin">Eliminar moneda</string>
+    <string name="no_favorito">No favorito</string>
+    <string name="change_favorite_positive_action_label">Añadir a favoritos</string>
+    <string name="change_favorite_negative_action_label">Eliminar de favoritos</string>
+    <string name="operate">Operar:</string>
+    <string name="description">Descripción:</string>
+    <string name="tab_webview_title">WebView!</string>
+</resources>

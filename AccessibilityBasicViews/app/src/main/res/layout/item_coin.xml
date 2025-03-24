@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="20dp">
+
+    <LinearLayout
+        android:id="@+id/llParentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:importantForAccessibility="noHideDescendants"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/coinImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+            android:importantForAccessibility="no"
+            android:contentDescription="@string/coin_logo"
+            android:src="@drawable/bitcoin_logo" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/coinName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#212121"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Bitcoin" />
+
+            <TextView
+                android:id="@+id/coinCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:text="BTC" />
+
+            <TextView
+                android:id="@+id/coinDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:importantForAccessibility="no"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:text="Bitcoin is the first decentralized cryptocurrency." />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/coinPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="50000€" />
+
+        <ImageView
+            android:id="@+id/favoriteIcon"
+            android:layout_width="wrap_content"
+            android:focusable="false"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/favorito"
+            android:padding="12dp"
+            android:minHeight="24dp"
+            android:minWidth="24dp"
+            android:src="@drawable/baseline_favorite_border_24"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

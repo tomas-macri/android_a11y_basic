@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/coins"
+        android:icon="@drawable/baseline_currency_bitcoin_24"
+        android:title="@string/tab_coin_title" />
+
+    <item
+        android:id="@+id/add_coin"
+        android:icon="@drawable/baseline_add_24"
+        android:title="@string/tab_add_title" />
+
+    <item
+        android:id="@+id/webview"
+        android:icon="@drawable/baseline_web_24"
+        android:title="@string/tab_webview_title" />
+</menu>

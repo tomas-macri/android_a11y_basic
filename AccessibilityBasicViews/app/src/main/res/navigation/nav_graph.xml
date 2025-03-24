@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/coins">
+
+    <fragment
+        android:id="@+id/coin_details"
+        android:name="com.tomasmacri.accessibilitybasicviews.ui.detail_coin.DetailCoinFragment"
+        android:label="@string/coin_details_title"
+        tools:layout="@layout/fragment_detail_coin">
+        <argument
+            android:name="coinCode"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_coin_to_form"
+            app:destination="@id/add_coin" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_coin"
+        android:name="com.tomasmacri.accessibilitybasicviews.ui.add_coin.AddCoinFragment"
+        android:label="@string/add_coin_title"
+        tools:layout="@layout/fragment_add_coin"/>
+    <fragment
+        android:id="@+id/coins"
+        android:name="com.tomasmacri.accessibilitybasicviews.ui.coins_list.CoinsFragment"
+        android:label="@string/coins_title"
+        tools:layout="@layout/fragment_coins">
+        <action
+            android:id="@+id/action_coins_to_coin_details"
+            app:destination="@id/coin_details">
+        <argument
+            android:name="coinCode"
+            app:argType="string"
+            app:nullable="false"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/webview"
+        android:name="com.tomasmacri.accessibilitybasicviews.ui.webview.WebViewFragment"
+        android:label="@string/tab_webview_title"
+        tools:layout="@layout/fragment_webview" />
+</navigation>
