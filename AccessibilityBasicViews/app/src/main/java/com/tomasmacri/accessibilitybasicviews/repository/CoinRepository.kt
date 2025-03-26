@@ -5,7 +5,7 @@ import com.tomasmacri.accessibilitybasicviews.domain.model.Coin
 object CoinRepository {
 
     private val coinsList = mutableListOf(
-        Coin("Bitcoin", "BTC", "Bitcoin es la primera criptomoneda descentralizada y la más conocida a nivel mundial. Fue creado por una persona o grupo bajo el pseudónimo de Satoshi Nakamoto en 2008. Su objetivo es permitir pagos de igual a igual sin la necesidad de una autoridad central.", 46000, "https://cryptologos.cc/logos/bitcoin-btc-logo.png", isFavorite = true),
+        Coin("Bitcoin", "BTC", "Bitcoin es la primera criptomoneda descentralizada y la más conocida a nivel mundial.", 46000, "https://cryptologos.cc/logos/bitcoin-btc-logo.png", isFavorite = true),
         Coin("Ethereum", "ETH", "Ethereum es una plataforma descentralizada de código abierto que ejecuta contratos inteligentes. A diferencia de Bitcoin, Ethereum permite la creación de aplicaciones descentralizadas (dApps) sobre su blockchain, lo que lo hace mucho más versátil.", 3300, "https://cryptologos.cc/logos/ethereum-eth-logo.png"),
         Coin("Litecoin", "LTC", "Litecoin es una criptomoneda que fue lanzada en 2011 como una alternativa más ligera y rápida a Bitcoin. Se basa en un código abierto y permite la verificación de transacciones con mayor rapidez.", 150, "https://cryptologos.cc/logos/litecoin-ltc-logo.png", isFavorite = true),
         Coin("Bitcoin Cash", "BCH", "Bitcoin Cash es una criptomoneda que nació como un fork de Bitcoin en 2017. El objetivo de Bitcoin Cash es permitir transacciones más rápidas y más baratas, a diferencia de Bitcoin.", 500, "https://cryptologos.cc/logos/bitcoin-cash-bch-logo.png", isFavorite = true),

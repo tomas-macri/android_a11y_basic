@@ -22,7 +22,7 @@ class CoinsFragment : Fragment() {
     private val adapter by lazy {
         CoinsAdapter(requireContext(), object: CoinActions {
             override fun onDeleteCoin(coin: Coin) {
-                viewModel.deleteCoin(coin)
+                deleteCoin(coin)
             }
 
             override fun onChangeFavoriteCoin(coin: Coin) {
